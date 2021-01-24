@@ -16,3 +16,8 @@ resource "aws_subnet" "main_az1" {
     Name = "Default subnet for us-east-1a"
   }
 }
+
+resource "aws_s3_bucket" "sample_bucket" {
+  bucket = "kln-local-bucket"
+  acl = "private"
+}
