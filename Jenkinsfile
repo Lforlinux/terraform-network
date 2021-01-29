@@ -46,15 +46,5 @@ pipeline {
                   )
             }
         }
-        stage('Terraform out'){
-            steps{
-                  sh(
-                      '''
-                      sh 'scripts/terraform-out.sh'
-                      '''  
-                  )
-            }
-        }
-
     }
 }
