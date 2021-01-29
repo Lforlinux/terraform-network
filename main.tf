@@ -13,7 +13,7 @@ resource "aws_subnet" "main_az1" {
   cidr_block = "10.0.0.0/24"
 
   tags = {
-    Name = "Default subnet for us-east-1a"
+    Name = "Subnet name changed here"
   }
 }
 
