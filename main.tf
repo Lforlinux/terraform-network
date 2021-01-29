@@ -13,7 +13,7 @@ resource "aws_subnet" "main_az1" {
   cidr_block = "10.0.0.0/24"
 
   tags = {
-    Name = "Subnet name changed here"
+    Name = "A new name now"
   }
 }
 
