@@ -1,4 +1,4 @@
 
 #!/bin/bash
-erraform apply  -auto-approve
+terraform apply  -auto-approve
 exit 0 

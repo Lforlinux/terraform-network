@@ -15,3 +15,4 @@ if [ $status -eq 0 ]; then
   terraform plan 
   else 
   echo "Not able to perform the plan"
+fi

@@ -4,6 +4,7 @@ pipeline {
     parameters{
         string(name:'AWS_ACCESS_KEY', defaultValue: '', description: 'AWS_ACCESS_KEY')
         string(name:'AWS_SECRET_ACCESS_KEY', defaultValue: '', description: 'AWS_SECRET_ACCESS_KEY')
+        string(name:'token', defaultValue: '', description: 'token')
     }
     stages {
         stage('Terraform Install'){
@@ -45,15 +46,5 @@ pipeline {
                   )
             }
         }
-        stage('Terraform out'){
-            steps{
-                  sh(
-                      '''
-                      sh 'scripts/terraform-out.sh'
-                      '''  
-                  )
-            }
-        }
-
     }
 }

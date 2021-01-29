@@ -6,5 +6,5 @@ terraform {
     workspaces {
       name = "terraform-network"
     }
-  }
-}
+   }
+ }
