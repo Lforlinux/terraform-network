@@ -4,7 +4,7 @@ terraform {
     organization = "lforlinux"
 
     workspaces {
-      name = "terraform-network"
+      name = "terraform-network-kln"
     }
    }
  }
