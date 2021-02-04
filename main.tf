@@ -13,11 +13,11 @@ resource "aws_subnet" "main_az1" {
   cidr_block = "10.0.0.0/24"
 
   tags = {
-    Name = "A new name now"
+    Name = "As per my ticket"
   }
 }
 
 resource "aws_s3_bucket" "sample_bucket" {
-  bucket = "kln-local-bucket"
+  bucket = "kln-local-bucket-anewone"
   acl = "private"
 }
