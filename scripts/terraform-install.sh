@@ -363,6 +363,7 @@ do_install() {
 				if ! is_dry_run; then
 					set -x
 				fi
+				$sh_c  sudo bash
 				$sh_c 'apt-get update -qq >/dev/null'
 				$sh_c "DEBIAN_FRONTEND=noninteractive apt-get install -y -qq $pre_reqs >/dev/null"
 				$sh_c "curl -fsSL \"$DOWNLOAD_URL/linux/$lsb_dist/gpg\" | apt-key add -qq - >/dev/null"
