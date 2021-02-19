@@ -1,6 +1,7 @@
 #!/bin/bash
 #!/bin/sh
 set -e
+set -x 
 # Docker CE for Linux installation script
 #
 # See https://docs.docker.com/install/ for the installation steps.
