@@ -75,13 +75,7 @@ command_exists() {
 	command -v "$@" > /dev/null 2>&1
 }
 
-is_dry_run() {
-	if [ -z "$DRY_RUN" ]; then
-		return 1
-	else
-		return 0
-	fi
-}
+
 
 is_wsl() {
 	case "$(uname -r)" in
