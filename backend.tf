@@ -1,10 +1,10 @@
-terraform {
-  backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "lforlinux"
+# terraform {
+#   backend "remote" {
+#     hostname = "app.terraform.io"
+#     organization = "lforlinux"
 
-    workspaces {
-      name = "terraform-network-kln"
-    }
-   }
- }
+#     workspaces {
+#       name = "terraform-network-kln"
+#     }
+#    }
+#  }
