@@ -1,23 +1,20 @@
-resource "aws_vpc" "main" {
-  cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "default"
+resource "aws_instance" "web" {
+  ami           = "ami-0747bdcabd34c712a"
+  instance_type = var.instance_type
 
   tags = {
-    Name = "main"
+    Name = "created-by-terraform-jenkins"
   }
 }
 
-resource "aws_subnet" "main_az1" {
-  availability_zone = "us-east-1a"
-  vpc_id = aws_vpc.main.id
-  cidr_block = "10.0.0.0/24"
-
-  tags = {
-    Name = "As per my ticket"
-  }
+output ins-id {
+     value = aws_instance.web.id
 }
 
-resource "aws_s3_bucket" "sample_bucket" {
-  bucket = "kln-local-bucket-anewone"
-  acl = "private"
+output instance_type {
+    value = aws_instance.web.instance_type
+}
+
+output public_ip {
+    value = aws_instance.web.public_ip
 }
