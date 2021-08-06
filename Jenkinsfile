@@ -11,7 +11,7 @@ pipeline {
             steps{
                   sh(
                       '''
-                      sh 'scripts/terraform-install.sh'
+                      sh 'scripts/terraform-bin-install.sh'
         
                       '''  
                   )
